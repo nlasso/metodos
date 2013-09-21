@@ -1,0 +1,31 @@
+#include <iostream>
+#include "Matriz.h"
+
+using namespace std;
+
+Matriz::Matriz(Matriz& M){};
+Matriz::Matriz(const int n,const int m){
+
+//    _fil = n;
+//    _col = m;
+//    valores =  new double*[n]; // puntero a puntero de arrays
+//    for (int i = 0; i < n; i++){
+//        valores[i] = new double [m]; // cada fila tengo el array
+//    }
+//    for (int i=0; i < n; i++){
+//        for (int j=0; j < m; j++)
+//
+////            cout << Filas[i][j] << endl;
+//           valores[i][j] = i+j;
+
+    _fil = n;
+    _col = m;
+    valores =  new double[n * m]; // puntero a puntero de arrays
+//    for (int i = 0; i < n; i++){
+
+}
+
+
+Matriz::~Matriz(){
+    delete valores;
+};
