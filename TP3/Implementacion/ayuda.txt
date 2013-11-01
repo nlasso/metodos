@@ -1,0 +1,28 @@
+Como utilizar el codigo:
+
+Compilacion:  g++ tp2.cpp Matriz.cpp Funciones.cpp -std=c++0x
+
+Ejecucion:
+Le pasamos estos parametro de entrada ordenados de esta forma:
+Span - h - n - C1-C2-...-Cn-1-COSTO-fmax
+
+De esta forma suponiendo que quiero hacer un puente como el del ejemplo ex1.in de span=6 h=1 n=6 C1=0.2 ...C5=0.2 COSTO=100000 y FMAX=100000 se ejecuta asi:
+
+./a.out 6 1 6 0.2 0.2 0.2 0.2 0.2 10000 10000
+
+Por pantalla se muestra cual es la fuerza maxima del puente y si se insertaron pilares, la de cada subestructura.También cuanto es el costo final y la cantidad de pilares insertados.
+
+Evitamos poner por pantalla el vector incognita de cada puente, la matriz A que se arma y el b, pero se puede ver descomentandolo del codigo, esta decision se dio para que veamos mas facilmente los resultados que nos interesan.
+
+Otros ejemplos de ejecucion son estos:
+
+./a.out 46 1 2 3 10 10
+
+./a.out 46 1 4 0.1 0.2 0.3 1777 1.5
+
+./a.out 60 12.5 6 0 8.175 8.175 8.175 0 100000 100000
+
+./a.out 46 1 18 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 0.101 0.11 0.12 0.13 0.14 0.15 0.16 0.17 14 1.5
+
+./a.out 46 1 26 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 0.101 0.11 0.12 0.13 0.14 0.15 0.16 0.17 0.18 0.19 0.20 0.21 0.22 0.23 0.24 0.25 14 1.5
+
